@@ -1,0 +1,170 @@
+% \documentclass[9pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=1.3cm]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{parskip} % space between paragraphs
+\usepackage{tabularx}
+\setlength{\parskip}{0.3em}
+\setlength{\parindent}{0pt}
+\setstretch{0.95} % reduce line spacing slightly
+
+% Colors
+\definecolor{headercolor}{HTML}{0B5394} % dark blue
+
+% Section formatting
+\titlespacing*{\section}{0pt}{4pt}{3pt} % left, before, after spacing
+\titleformat{\section}{
+  \color{headercolor}\normalfont\large\bfseries
+}{}{0em}{}[\titlerule]
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=headercolor,
+    urlcolor=headercolor,
+    citecolor=headercolor
+}
+
+% Itemize spacing
+\setlist[itemize]{noitemsep, topsep=1pt, leftmargin=*, parsep=0pt}
+
+% Header info command
+\newcommand{\headerinfo}[3]{
+  \begin{center}
+    {\LARGE \bfseries #1} \\[-0.3em]
+    {\normalsize \textcolor{headercolor}{#2}} \\[-0.8em]
+    \href{mailto:#3}{#3}
+  \end{center}
+  \vspace{-1em}
+  \hrule
+  \vspace{0.8em}
+}
+
+\begin{document}
+% Header info command fixed with better spacing around hrule
+\newcommand{\headerinfo}[3]{
+  \begin{center}
+    {\LARGE \bfseries #1} \\[-0.3em]
+    {\normalsize \textcolor{headercolor}{#2}} \\[0.2em] % more space below email
+    \href{mailto:#3}{#3}
+  \end{center}
+  \vspace{-0.5em} % less negative space before rule
+  \hrule
+  \vspace{1em} % more space after rule
+}
+% Header info command fixed
+\newcommand{\headerinfo}[3]{
+  \begin{center}
+    {\LARGE \bfseries #1} \\[-0.3em]
+    {\normalsize \textcolor{headercolor}{#2}} \\[-0.1em]  % less negative space
+    \href{mailto:#3}{#3}
+  \end{center}
+  \vspace{-0.3em}  % smaller negative before rule
+  \hrule
+  \vspace{0.6em}   % more space after rule
+}
+
+% Header
+\headerinfo{Ritik Sharma}{}{rsritiksharma10@gmail.com}
+
+
+% Contact line spaced evenly using hfill
+\noindent
+\textbf{Phone:} +91 9999863367 \hfill
+\textbf{LinkedIn:} \href{https://www.linkedin.com/in/ritik-sharma-6638791a6/}{linkedin.com/in/ritik-sharma-6638791a6} \hfill
+\textbf{GitHub:} \href{https://github.com/iRitikSharma}{github.com/iRitikSharma}
+
+
+
+\vspace{0.8em}
+
+\section*{Profile}
+Results-driven Python Developer with hands-on experience developing REST APIs, automation scripts, and data-driven applications. Strong backend development skills using Django and Flask. Proven ability to work effectively in agile teams, solve problems efficiently, and deliver innovative solutions. Eager to contribute and grow in a collaborative environment.
+
+\section*{Experience}
+\textbf{Python Intern} \hfill \textit{Apr 2025 -- Sep 2025} \\
+TruBoard Partners, Mumbai
+\begin{itemize}
+  \item Automated internal workflows using Python scripts, reducing manual effort by 30\%.
+  \item Built REST APIs with Flask, improving API response time by 25\%.
+  \item Collaborated with data teams using \texttt{pandas} and \texttt{NumPy}, streamlining reporting.
+  \item Participated in agile ceremonies including daily stand-ups and code reviews.
+\end{itemize}
+
+\section*{Personal Projects}
+
+
+\noindent
+\textbf{Amazon Clone} \hfill \textit{HTML, CSS} \\
+\href{https://github.com/iRitikSharma/Amazon-Clone-HTML-CSS-}{github.com/iRitikSharma/Amazon-Clone-HTML-CSS} \vspace{-0.4em}
+\begin{itemize}
+  \item Built fully responsive Amazon homepage clone with Flexbox/Grid and reusable components.
+  \item Developed a fully responsive Amazon UI clone using pure HTML and CSS for hands on front-end practice.
+  \item Created an Amazon home page clone with modern HTML/CSS layouts, flexbox/grid design, and reusable components.
+  
+\end{itemize}
+
+\noindent
+\textbf{Flappy Bird} \hfill \textit{Python, Pygame} \\
+\href{https://github.com/iRitikSharma/Flappy-Bird}{github.com/iRitikSharma/Flappy-Bird} \vspace{-0.4em}
+\begin{itemize}
+  \item Recreated classic Flappy Bird game with real-time mechanics and score tracking.
+  \item Implemented obstacle generation, collision detection, and animation rendering.
+  \item Optimized game loop for 60 FPS, improving performance by 25\%.
+\end{itemize}
+
+
+\noindent
+\textbf{J.A.R.V.I.S } \hfill \textit{Python} \\
+\href{https://github.com/iRitikSharma/JarvisAI-Python}{github.com/iRitikSharma/JarvisAI-Python} \vspace{-0.4em}
+\begin{itemize}
+  \item Built a desktop AI assistant capable of voice-based commands, using GPT for NLP. 
+  \item Automated tasks including web scraping, file operations, and real-time interaction. 
+  \item Enhanced task execution accuracy by 15\%  through improved voice command handling. 
+\end{itemize}
+
+
+\noindent
+\textbf{Office Employee Management System} \hfill \textit{Python, Django} \\
+\href{https://github.com/iRitikSharma/Office-Employee-Management-System}{github.com/iRitikSharma/Office-Employee-Management-System} \vspace{-0.4em}
+\begin{itemize}
+  \item Developed web-based CRUD system for HR with authentication, roles, and permissions.
+  \item Improved CRUD efficiency by 20\% via optimized database queries.
+  \item Added user roles and permissions for secure data handling. 
+  \item Improved CRUD efficiency by 20\% through optimized database queries. 
+  
+\end{itemize}
+
+\section*{Skills}
+\begin{tabular}{@{}p{4.5cm} p{10cm}@{}}
+\textbf{Programming Languages:} & Python, Java, C, C++ \\
+\textbf{Frameworks:} & Django, Django REST Framework, Spring Boot, Selenium \\
+\textbf{Libraries:} & NumPy, Pandas, Pygame, Matplotlib \\
+\textbf{Web Technologies:} & HTML, CSS \\
+\textbf{Databases:} & SQL, MongoDB, pgAdmin \\
+\textbf{Tools:} & VSCode, Jupyter Notebook, IntelliJ IDEA, PyCharm, Postman, Git, Celery, Docker \\
+\textbf{Soft Skills:} & Time Management, Adaptability, Problem Solving \\
+\end{tabular}
+
+\section*{Certifications}
+\begin{itemize}
+  \item Complete Python Bootcamp 2024: Zero to Expert in Python -- Udemy
+  \item Learn SQL -- Codecademy
+\end{itemize}
+
+\section*{Languages}
+English (Fluent), Hindi (Fluent)
+
+\section*{Education}
+\textbf{K. R. Mangalam University} \hfill \textit{2020 -- 2024} \\
+Bachelor of Technology in Computer Science
+
+\vspace{0.3em}
+\textbf{S. M. Arya Public School} \hfill \textit{2017 -- 2019} \\
+Grade 10th \& 12th
+
+\end{document}
