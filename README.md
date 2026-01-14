@@ -1,7 +1,7 @@
 # 📄 Latest Resume
 
 Welcome to my **Latest Resume** repository! This contains the most recent version of my professional resume showcasing my skills, experience, projects, and education — designed to help me connect with recruiters and potential employers.
-
+ 
 ---
 
 ## 🚀 About
